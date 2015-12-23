@@ -45,7 +45,7 @@ textToBigrams <- function(textList, cutoff = 100, p.value.test = F, p.value.cut 
     bigramsSpaced <- gsub(pattern = concat, replacement = " ",x = bigrams, fixed = T)
 
     for(i in 1:length(bigrams)){
-      cat("ngram ", i)
+      cat("ngram ", i, "\n")
       textList <- gsub(x = textList, pattern = paste(" ",bigramsSpaced[i], " ",sep = ""), replacement = paste(" ",bigrams[i], " ",sep = ""))
     }
     }else{
@@ -98,7 +98,7 @@ textToBigrams <- function(textList, cutoff = 100, p.value.test = F, p.value.cut 
         bigramsSpaced <- gsub(pattern = concat, replacement = " ",x = bigrams, fixed = T)
         
         for(i in 1:length(bigrams)){
-          cat("ngram ",i)
+          cat("ngram ", i, "\n")
           textList <- gsub(x = textList, pattern = paste(" ",bigramsSpaced[i], " ",sep = ""), replacement = paste(" ",bigrams[i], " ",sep = ""))
         }
       }else{
