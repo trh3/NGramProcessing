@@ -6,6 +6,9 @@
 # You should have received a copy of the license along with this
 # work.  If not, see <http://creativecommons.org/licenses/by/3.0/>.
 
+#Above is a real quick license to slap on the work, use if you want, just attribute these functions
+#(just the code in the document) to me
+
 install.packages("quanteda")
 install.packages("data.table")
 library(quanteda)
