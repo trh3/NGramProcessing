@@ -29,6 +29,8 @@ library(data.table)
 #Return.word.list returns only the list of bigrams that are over the threshold, and does not
 #                 process the data, use this to evaluate the performance of the algorithm
 #Concat determines what character is used to combine bigrams
+
+###Example Comment
 textToBigrams <- function(textList, cutoff = 100, p.value.test = F, p.value.cut = .05, 
                           dfm.return = F, return.word.list = F, concat = "_", BF.corr = F){
   corp <- corpus(textList)
